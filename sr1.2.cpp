@@ -7,7 +7,7 @@ int main(){
     long c;
     cout << "Введите число: ";
     cin >> c;
-    int n=c;
+    long n=c;
     string bin = "";
     while (n>0){
         bin = char('0' + n%2) + bin;

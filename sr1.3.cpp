@@ -19,7 +19,7 @@ int main(){
             prep++;
         }
     }
-cout << "Букв: " << a << endl;
+cout << "Букв английских: " << a << endl;
 cout << "Цифр: " << d << endl;
 cout << "Пробелов: " << probel << endl;
 cout << "Знаков препинания: " << prep << endl;

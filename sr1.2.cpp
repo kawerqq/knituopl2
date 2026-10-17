@@ -7,6 +7,10 @@ int main(){
     long c;
     cout << "Введите число: ";
     cin >> c;
+    if (cin.fail()) {
+        cout << "Ошибка: введено не число" << endl;
+        return 0;
+    }
     long n=c;
     string bin = "";
     while (n>0){

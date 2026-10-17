@@ -5,10 +5,18 @@ using namespace std;
 int main(){
     int a, n;
     double c=1;
-    cout << "Введите число ";
+    cout << "Введите число " << endl;
     cin >> a;
-    cout << "В какую степень хотите возвести ";
+    if (cin.fail()) {
+        cout << "Ошибка: введено не число" << endl;
+        return 0;
+    }
+    cout << "В какую степень хотите возвести " << endl;
     cin >> n;
+    if (cin.fail()) {
+        cout << "Ошибка: введено не число" << endl;
+        return 0;
+    }
     
     if (n >= 0){
         for (int i=0; i<n; i++){

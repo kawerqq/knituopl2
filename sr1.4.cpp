@@ -5,10 +5,22 @@ int main(){
 
     cout << "Введите день ";
     cin >> d;
+    if (cin.fail()) {
+        cout << "Ошибка: введено не число" << endl;
+        return 0;
+    }
     cout << "Введите месяц ";
     cin >> m;
+    if (cin.fail()) {
+        cout << "Ошибка: введено не число" << endl;
+        return 0;
+    }
     cout << "Введите год ";
     cin >> g;
+    if (cin.fail()) {
+        cout << "Ошибка: введено не число" << endl;
+        return 0;
+    }
     old = cg - g;
     if (cm < m){
         cout << "Ваш возраст" << old-1 << "\n";

@@ -7,6 +7,10 @@ int main(){
     long summ = 0;
     cout << "Введите число ";
     cin >> n;
+    if (cin.fail()) {
+        cout << "Ошибка: введено не число" << endl;
+        return 0;
+    }
     if (n>0){
         while(i<=n){
             if (i % 5 == 0){
